@@ -45,6 +45,26 @@ a:visited {
   color: var(--secundary-color-orange);
 }
 
+/* Header component starts */
+
+.main-header {
+  width: 100%;
+  height: auto;
+  grid-column: 2;
+}
+
+.main-header li a {
+  color: var(--primary-color-dark);
+}
+
+.main-header .contact-link {
+  color: #424242;
+  background-color: #eeeeee;
+  font-weight: 600;
+}
+
+/* Header component ends */
+
 /* Main section starts */
 
 .main {
@@ -464,6 +484,10 @@ a:visited {
 }
 
 @media (min-width: 1100px) {
+  /* .main-header {
+    margin: 20px 150px;
+  } */
+
   .label-container p {
     font-size: 1.2em;
   }

@@ -5,11 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <title>Document</title>
   </head>
   <body>
     <div class="main-grid">
-      <main class="main main-container">
+      <header class="main-header">
+        <nav class="navbar navbar-expand-lg row my-4 my-lg-3">
+          <div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="navbar-nav w-100 text-center text-lg-end mb-2 mb-lg-0 d-flex justify-content-between"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <img
+                      src="./assets/primary-horizontal.png"
+                      alt=""
+                      style="max-width: 280px"
+                    />
+                  </a>
+                </li>
+                <div class="d-lg-flex align-items-lg-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#beneficios">Beneficios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#plataforma">Plataforma</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#planes">Planes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#acerca">Acerca de</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link contact-link px-4 py-2 m-0 ms-lg-4"
+                      href="#"
+                      >Contactanos</a
+                    >
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Benefits section -->
+      <main id="beneficios" class="main main-container">
         <div class="main__info">
           <h1>
             Ofrece <span class="colored--blue-light">autenticidad</span> y
@@ -29,6 +90,8 @@
           <img src="./assets/img1.png" alt="" />
         </div>
       </main>
+
+      <!-- Examples section -->
       <div class="types types-container">
         <h4>
           ¡No importa cuál sea tu necesidad, seguro que podemos ayudarte!"
@@ -54,7 +117,9 @@
           <a href="#">Mas informacion</a>
         </div>
       </section>
-      <div class="platform platform-container">
+
+      <!-- Platform section -->
+      <div id="plataforma" class="platform platform-container">
         <div class="platform__head">
           <h1>
             Conoce nuestra <span class="colored--orange">plataforma</span>
@@ -94,7 +159,9 @@
           </div>
         </div>
       </div>
-      <div class="plans plans-container">
+
+      <!-- Pricing section -->
+      <div id="planes" class="plans plans-container">
         <div class="plans__head">
           <h1>El mejor plan para ti</h1>
           <p>Empieza a crear valor</p>
@@ -175,13 +242,17 @@
           </div>
         </div>
       </div>
+
+      <!-- Label component -->
       <div class="label label-container">
         <p>
           ¿Necesitas un plan personalizado que se ajuste a tu negocio?
           <span><a href="#">Contactanos</a></span>
         </p>
       </div>
-      <section class="learn learn-container">
+
+      <!-- Learn section -->
+      <section id="acerca" class="learn learn-container">
         <div class="learn__desc">
           <h1>
             Aprende mas sobre <span class="colored--orange">Blockchain</span>
@@ -194,5 +265,12 @@
         </div>
       </section>
     </div>
+
+    <!-- Bootstrap bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

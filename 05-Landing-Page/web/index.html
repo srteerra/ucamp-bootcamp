@@ -11,10 +11,10 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>CertChain - Autenticacion con Blockchain</title>
   </head>
   <body>
-    <div class="main-grid">
+    <div id="top" class="main-grid">
       <header class="main-header">
         <nav class="navbar navbar-expand-lg row my-4 my-lg-3">
           <div>
@@ -69,8 +69,8 @@
         </nav>
       </header>
 
-      <!-- Benefits section -->
-      <main id="beneficios" class="main main-container">
+      <!-- Main section -->
+      <main class="main main-container">
         <div class="main__info">
           <h1>
             Ofrece <span class="colored--blue-light">autenticidad</span> y
@@ -80,7 +80,11 @@
           <h3>tu solución para llevar tu negocio al siguiente nivel</h3>
           <div class="main__input">
             <input type="text" placeholder="Tu correo aqui..." />
-            <button>Enviar</button>
+            <button>
+              Enviar<span
+                ><img src="./assets/icons/send.png" alt="" class="link-icon"
+              /></span>
+            </button>
           </div>
           <p>
             Recibe nuestras actualizaciones y promociones especiales para ti.
@@ -104,7 +108,9 @@
           <p class="types__list-block">Certificados de propiedad</p>
         </div>
       </div>
-      <section class="more-info more-info-container">
+
+      <!-- Benefits section -->
+      <section id="beneficios" class="more-info more-info-container">
         <div class="more-info__img">
           <img src="./assets/img2.png" alt="" />
         </div>
@@ -114,7 +120,13 @@
             <span class="colored--orange">integridad</span>
           </h1>
           <p>de cualquier documento con blockchain.</p>
-          <a href="#">Mas informacion</a>
+          <a href="#"
+            >Mas informacion<span
+              ><img
+                src="./assets/icons/arrow-b.png"
+                alt=""
+                class="explore-icon" /></span
+          ></a>
         </div>
       </section>
 
@@ -139,7 +151,13 @@
               <span class="colored--orange">Certifica</span> tus documentos en
               Blockchain
             </h3>
-            <a href="#">Explorar</a>
+            <a href="#"
+              >Explorar<span
+                ><img
+                  src="./assets/icons/link.png"
+                  alt=""
+                  class="link-icon" /></span
+            ></a>
           </div>
           <div class="platform__links-card">
             <img src="./assets/icons/blocks.png" alt="" id="card-icon" />
@@ -147,7 +165,13 @@
               <span class="colored--orange">Valida</span> la autenticidad de tus
               documentos
             </h3>
-            <a href="#">Explorar</a>
+            <a href="#"
+              >Explorar<span
+                ><img
+                  src="./assets/icons/link.png"
+                  alt=""
+                  class="link-icon" /></span
+            ></a>
           </div>
           <div class="platform__links-card">
             <img src="./assets/icons/cert.png" alt="" id="card-icon" />
@@ -155,7 +179,13 @@
               Genera un certificado
               <span class="colored--orange">personalizado</span>
             </h3>
-            <a href="#">Explorar</a>
+            <a href="#"
+              >Explorar<span
+                ><img
+                  src="./assets/icons/link.png"
+                  alt=""
+                  class="link-icon" /></span
+            ></a>
           </div>
         </div>
       </div>
@@ -171,8 +201,8 @@
           <!-- Basic card -->
           <div class="plans__card">
             <div>
-              <h1 class="card-title">Basico</h1>
-              <h2 class="colored--red">$700.00/mes</h2>
+              <h2 class="card-title">Basico</h2>
+              <h3 class="colored--red">$700.00/mes</h3>
               <ul>
                 <li>Acceso a la plataforma</li>
                 <li>Hasta 100 documentos por mes.</li>
@@ -187,7 +217,7 @@
               </ul>
             </div>
             <div>
-              <button>Contratar</button>
+              <button class="buy-pricing__button">Contratar</button>
               <a href="#">Preguntas frecuentes</a>
             </div>
           </div>
@@ -196,8 +226,8 @@
           <div class="plans__card">
             <div>
               <button class="tag">Mas popular</button>
-              <h1 class="card-title">Plus</h1>
-              <h2 class="colored--red">$1,800.00/mes</h2>
+              <h2 class="card-title">Plus</h2>
+              <h3 class="colored--red">$1,800.00/mes</h3>
               <ul>
                 <li>Acceso a la plataforma</li>
                 <li>Hasta 500 documentos por mes.</li>
@@ -212,7 +242,7 @@
               </ul>
             </div>
             <div>
-              <button>Contratar</button>
+              <button class="buy-pricing__button">Contratar</button>
               <a href="#">Preguntas frecuentes</a>
             </div>
           </div>
@@ -220,8 +250,8 @@
           <!-- Enterprise card -->
           <div class="plans__card">
             <div>
-              <h1 class="card-title">Empresarial</h1>
-              <h2 class="colored--red">$3,500.00/mes</h2>
+              <h2 class="card-title">Empresarial</h2>
+              <h3 class="colored--red">$3,500.00/mes</h3>
               <ul>
                 <li>Acceso a la plataforma</li>
                 <li>Hasta 1500 documentos por mes.</li>
@@ -236,7 +266,7 @@
               </ul>
             </div>
             <div>
-              <button>Contratar</button>
+              <button class="buy-pricing__button">Contratar</button>
               <a href="#">Preguntas frecuentes</a>
             </div>
           </div>
@@ -258,12 +288,72 @@
             Aprende mas sobre <span class="colored--orange">Blockchain</span>
           </h1>
           <p>y descubre como funciona nuestro servicio.</p>
-          <a href="#">Explorar</a>
+          <a href="#"
+            >Explorar
+            <span
+              ><img
+                src="./assets/icons/arrow-b.png"
+                alt=""
+                class="explore-icon" /></span
+          ></a>
         </div>
         <div class="learn__img">
           <img src="./assets/img3.png" alt="" />
         </div>
       </section>
+
+      <footer class="footer footer-container">
+        <div class="footer-menu">
+          <ul>
+            <li>Menu</li>
+            <li>
+              <a href="#">Regresar arriba</a>
+            </li>
+            <li>
+              <a href="#beneficios">Beneficios</a>
+            </li>
+            <li>
+              <a href="#plataforma">Plataforma</a>
+            </li>
+            <li>
+              <a href="#planes">Planes</a>
+            </li>
+            <li>
+              <a href="#acerca">Conoce mas</a>
+            </li>
+          </ul>
+          <ul>
+            <li>Explora</li>
+            <li>
+              <a href="#">Branding</a>
+            </li>
+            <li>
+              <a href="#">Acerca de</a>
+            </li>
+            <li>
+              <a href="#">Terminos y condiciones</a>
+            </li>
+            <li>
+              <a href="#">Equipo</a>
+            </li>
+          </ul>
+          <ul>
+            <li>Mas</li>
+            <li>
+              <a href="#">Repositorio</a>
+            </li>
+            <li>
+              <a href="#">Licencia</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copy">
+          <p>
+            <span style="font-weight: 700"><a href="#">Certchain MX</a></span> @
+            Copyright 2023
+          </p>
+        </div>
+      </footer>
     </div>
 
     <!-- Bootstrap bundle -->

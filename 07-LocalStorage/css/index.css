@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  place-items: center;
+}
+
+#new-task__input {
+  width: 300px;
+  padding: 10px 15px;
+}
+
+#new-task__submit {
+  width: 200px;
+  padding: 10px 0;
+  margin: 20px 0;
+  color: white;
+  border: none;
+  background-color: rgb(43, 43, 43);
+}
+
+#new-task__submit:hover {
+  opacity: 80%;
+  cursor: pointer;
+}

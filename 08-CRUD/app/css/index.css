@@ -1,10 +1,16 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 0.5fr 6fr 0.5fr;
+}
+
+header {
+  padding: 40px 0;
 }
 
 .container {
@@ -34,6 +40,46 @@
   flex-direction: column;
 }
 
+#tasks_container {
+  width: 100%;
+  margin: 20px 0;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+#tasks_container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  color: white;
+  font-weight: 500;
+  gap: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(49, 74, 95);
+}
+
+#tasks_container aside button {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+}
+
+#tasks_container aside button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+#tasks_container aside button:nth-of-type(1) {
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  background-color: rgb(196, 39, 39);
+}
+
 #new-task__input {
   width: 100%;
   padding: 10px 15px;
@@ -43,9 +89,10 @@
   width: 100%;
   padding: 10px 0;
   margin: 20px 0;
+  font-weight: 800;
   color: white;
   border: none;
-  background-color: rgb(43, 43, 43);
+  background-color: rgb(56, 56, 56);
 }
 
 #new-task__submit:hover {
@@ -56,4 +103,38 @@
 #new-task__submit:disabled {
   opacity: 40%;
   cursor: default;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 30px 0;
+  color: white;
+  background-color: rgb(56, 56, 56);
+}
+
+#menu {
+  width: 100%;
+  display: flex;
+}
+
+#menu input {
+  width: 100%;
+  padding: 10px 15px;
+}
+
+#menu button {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 20px 0;
+  font-weight: 800;
+  color: white;
+  border: none;
+  background-color: rgb(52, 100, 51);
+}
+
+#menu button:hover {
+  opacity: 80%;
+  cursor: pointer;
 }

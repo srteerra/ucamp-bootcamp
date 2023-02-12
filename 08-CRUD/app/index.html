@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Tasks</title>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="container">
+        <h1>LocalStorage Delete Items</h1>
+        <div id="menu" style="display: none">
+          <input
+            type="text"
+            id="update-task__input"
+            placeholder="Enter something..."
+          />
+          <button id="confirm-task__btn">Confirm</button>
+        </div>
+        <div class="control__container">
+          <input
+            type="text"
+            id="new-task__input"
+            placeholder="Enter a new task"
+          />
+          <button id="new-task__submit">Add new</button>
+        </div>
+        <div id="tasks_container"></div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

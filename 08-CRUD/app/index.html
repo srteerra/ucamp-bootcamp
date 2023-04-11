@@ -8,11 +8,20 @@
     <title>Tasks</title>
   </head>
   <body>
-    <header><h1>CRUD Application</h1></header>
-    <div class="container">
-      <div class="container__top">
-        <h2>Your To Do list</h2>
-        <div class="container__menu">
+    <div class="grid">
+      <div class="container">
+        <header>
+          <h1>LocalStorage CRUD</h1>
+        </header>
+        <div id="menu" style="display: none">
+          <input
+            type="text"
+            id="update-task__input"
+            placeholder="Enter something..."
+          />
+          <button id="confirm-task__btn">Confirm</button>
+        </div>
+        <div class="control__container">
           <input
             type="text"
             id="new-task__input"
@@ -21,9 +30,11 @@
           <button id="new-task__submit">Add new</button>
         </div>
         <div id="tasks_container"></div>
+        <footer>
+          <p>Made with <3 by Angel lopez</p>
+        </footer>
       </div>
     </div>
-    <footer>Made with <3 by ANGEL LOPEZ</footer>
     <script src="./js/index.js"></script>
   </body>
 </html>
